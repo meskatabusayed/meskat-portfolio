@@ -1,0 +1,10 @@
+/* ===== GOOGLE FONTS ====== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Poppins:wght@400;500;800&display=swap');
+
+/* =====  CSS VARIABLES =====*/
+:root {
+    /* ===== Colors ===== */
+    /* Color mode HSL(hue , saturation , lightness */
+    --first-color: hsl(300, 88%, 53%);
+    --title-color: hsl()
+}
