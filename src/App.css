@@ -83,3 +83,13 @@ textarea {
 img {
     max-width: 100%;
 }
+
+/* ===== REUSABLE CSS ===== */
+.grid {
+    display: grid;
+    gap: 30px;
+}
+
+.section {
+    padding-block: 70px;
+}

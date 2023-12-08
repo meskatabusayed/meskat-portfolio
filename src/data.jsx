@@ -17,12 +17,12 @@ export const links = [
         id: 3,
         name: 'Portfolio' ,
         icon: <FaFolderOpen className="nav__icon"></FaFolderOpen>,
-        path: '/about',
+        path: '/portfolio',
     },
     {
         id: 4,
         name: 'Contact' ,
         icon: <FaEnvelopeOpen className="nav__icon"></FaEnvelopeOpen>,
-        path: '/about',
+        path: '/contact',
     },
 ]
