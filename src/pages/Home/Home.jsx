@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import "./home.css"
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
     return (
@@ -24,7 +25,7 @@ const Home = () => {
                         </h3>
 
                         <p className="home__description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, quibusdam debitis totam omnis repellendus rem assumenda optio, sit necessitatibus autem quisquam distinctio nemo excepturi! Beatae facilis error provident corporis. Porro.
+                           I'm a Meskat Mohammad Abu Sayed based web developer focused on crafting clean & user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
                         </p>
 
                         <Link to="/about" className="button">
@@ -38,7 +39,9 @@ const Home = () => {
 
                 </div>
             </section>
-           
+           <div>
+            <Footer></Footer>
+           </div>
         </div>
     );
 };

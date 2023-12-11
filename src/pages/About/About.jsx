@@ -7,6 +7,7 @@ import './about.css';
 import Skills from "../../components/Skills";
 import { resumes } from "../../data";
 import ResumeItem from "../../components/ResumeItem";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
     return (
@@ -27,7 +28,7 @@ const About = () => {
                                 <Info></Info>
                             </ul>
 
-                            <a href={resume} download='' className="button">Download CV <span className="button__icon"> <FaDownload /> </span>
+                            <a href={resume} download='' className="button">Download Resume <span className="button__icon"> <FaDownload /> </span>
                             </a>
                         </div>
 
@@ -54,13 +55,24 @@ const About = () => {
                 <div className="separator"></div>
 
                 <section className="resume">
-                    <h3 className="section__subtitle subtitle__center">Experience & Education</h3>
+                    <h3 className="section__subtitle subtitle__center">Experience , Education & Projects</h3>
 
                     <div className="resume__container grid">
                         <div className="resume__data">
                             {
                                 resumes.map((val) => {
-                                    return <ResumeItem key={val.id}></ResumeItem>
+                                    if (val.category === 'experience'){
+                                        return <ResumeItem key={val.id} {...val}></ResumeItem>
+                                    }
+                                })
+                            }
+                        </div>
+                        <div className="resume__data">
+                            {
+                                resumes.map((val) => {
+                                    if (val.category === 'education'){
+                                        return <ResumeItem key={val.id} {...val}></ResumeItem>
+                                    }
                                 })
                             }
                         </div>
@@ -68,6 +80,9 @@ const About = () => {
                 </section>
 
             </main>
+            <div>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };

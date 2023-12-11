@@ -1,9 +1,10 @@
 
 
-const ResumeItem = () => {
+const ResumeItem = ({year ,   title}) => {
     return (
-        <div>
-            fgdrj
+        <div className="resume__item">
+            <span className="resume__data">{year}</span>
+            <h3 className="resume__subtitle">{title}</h3>
         </div>
     );
 };

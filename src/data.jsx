@@ -13,12 +13,12 @@ export const links = [
         icon: <FaUser className="nav__icon"></FaUser>,
         path: '/about',
     },
-    {
-        id: 3,
-        name: 'Portfolio' ,
-        icon: <FaFolderOpen className="nav__icon"></FaFolderOpen>,
-        path: '/portfolio',
-    },
+    // {
+    //     id: 3,
+    //     name: 'Portfolio' ,
+    //     icon: <FaFolderOpen className="nav__icon"></FaFolderOpen>,
+    //     path: '/portfolio',
+    // },
     {
         id: 4,
         name: 'Contact' ,
@@ -123,23 +123,44 @@ export const skills = [
 export const resumes = [
     {
         id: 1,
-        
+        category: 'education',
         year: '2019',
         title: "SSC"
 
     },
     {
         id: 2,
-        
+        category: 'education',
         year: '2021',
         title: "HSC"
 
     },
     {
         id: 3,
-       
+        category: 'education',
         year: '2022 - Present',
         title: "Bachelor of Computer Science And Engineering"
+
+    },
+    {
+        id: 4,
+        category: 'experience',
+        year: '1+ Month',
+        title: "intern At BWU"
+
+    },
+    {
+        id: 5,
+        category: 'experience',
+        year: '2023',
+        title: "Job Posting Project"
+
+    },
+    {
+        id: 4,
+        category: 'experience',
+        year: '2023',
+        title: "Real estate management project"
 
     },
 ]
